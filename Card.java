@@ -16,6 +16,27 @@ class Card {
         return rank;
     }
 
+    public String toString(){
+        String result = "";
+        if(rank == 1){
+            result += "Ace";  
+        }
+        if(rank > 1 && rank < 11){
+            result += "Ace";  
+        }
+        if(rank == 11){
+            result += "Jack";  
+        }
+        if(rank == 12){
+            result += "Queen";  
+        }
+        if(rank == 13){
+            result += "King";  
+        }
+        result += " of " + suit;
+        return result;
+    }
+
 
 
 
